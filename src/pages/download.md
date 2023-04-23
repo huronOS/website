@@ -33,4 +33,9 @@ For other versions, please check our [mirrors](#mirrors) list
 | huronOS | https://mirrors.huronos.org/huronOS/ |
 
 ### Become a mirror!
-TODO: setup rsync and gen keys and sync url
+Please, notify us when setting up a mirror of huronOS!
+You can reach out via discord, or email to:
+	- equetzal [at] huronos.org
+	- dcena [at] huronos.org
+
+To mirror, please use the url `rsync://mirrors.huronos.org/huronOS`
