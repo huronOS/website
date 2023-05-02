@@ -77,7 +77,12 @@ const config = {
 						position: "left",
 						label: "Docs",
 					},
-					{ to: "/blog", label: "Blog", position: "left" },
+					/*{ to: "/blog", label: "Blog", position: "left" },*/
+					{
+						label: "Contribute",
+						to: "/contribute",
+						position:"left"
+					},
 					{
 						href: "https://github.com/equetzal/huronOS-build-tools",
 						label: "GitHub",
@@ -92,8 +97,16 @@ const config = {
 						title: "Docs",
 						items: [
 							{
-								label: "Tutorial",
+								label: "Introduction",
 								to: "/docs/introduction",
+							},
+							{
+								label: "About",
+								to: "/docs/category/about-huronos",
+							},
+							{
+								label: "Install",
+								to: "/docs/usage/how-to-install",
 							},
 						],
 					},
@@ -110,9 +123,13 @@ const config = {
 						title: "More",
 						items: [
 							{
+								label: "Contribute",
+								to: "contribute/"
+							},
+							/*{
 								label: "Blog",
 								to: "/blog",
-							},
+							},*/
 							{
 								label: "GitHub",
 								href: "https://github.com/equetzal/huronOS-build-tools",
@@ -120,7 +137,7 @@ const config = {
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()}, website licensed under AGPL. Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()}, huronOS. Built with Docusaurus.`,
 			},
 			prism: {
 				theme: lightCodeTheme,
