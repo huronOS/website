@@ -10,32 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Works from a USB stick.',
+    Svg: require('@site/static/img/huronOS_usb_sticks.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        huronOS was designed from the ground to boot from a USB stick, 
+        so that you don't need to modify any institutional hardware.
+        Just plug and boot!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Isolates your environment in a matter of seconds.',
+    Svg: require('@site/static/img/huronOS_isolated_computer.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        It's designed for contests like the ICPC or the IOI, easily customize your firewall.
+        Ideal for official or training contest, camps and even exams!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Sync up to N instances.',
+    Svg: require('@site/static/img/huronOS_instance_sync.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        huronOS is build with synchronization in mind,
+        you can use network-shared behavior directives 
+        to set the same rules, software and policies 
+        among huronOS instances.
       </>
     ),
   },
