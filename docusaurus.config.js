@@ -80,9 +80,19 @@ const config = {
 					},
 					/*{ to: "/blog", label: "Blog", position: "left" },*/
 					{
+						type: "dropdown",
 						label: "Contribute",
-						to: "/contribute",
-						position:"left"
+						position:"left",
+						items: [
+							{
+								label: "Collaborate",
+								to: "/collaborate",
+							},
+							{
+								label: "Donate",
+								to: "/donate"
+							}
+						]
 					},
 					{
 						href: "https://github.com/equetzal/huronOS-build-tools",
