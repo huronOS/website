@@ -142,8 +142,12 @@ const config = {
 						title: "More",
 						items: [
 							{
-								label: "Contribute",
-								to: "contribute/"
+								label: "Collaborate",
+								to: "collaborate/"
+							},
+							{
+								label: "Donate",
+								to: "donate/"
 							},
 							/*{
 								label: "Blog",
