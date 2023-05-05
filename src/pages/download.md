@@ -17,11 +17,11 @@ title: Download huronOS
 	</tr>
 	<tr>
 		<th>MD5 Sum</th>
-		<td>bdc2ddca30bbe00df6a271979e894305</td>
+		<td>0fc59f2589dc70ecb34bdda47870eef8</td>
 	</tr>
 	<tr>
 		<th>Sha 256 Sum</th>
-		<td>6c9906b6995a433b4a6c0dae1962d5f7f05e75eb751b4d432a176dbf04a81ae4</td>
+		<td>309822e6009302314cf3d580b20086775384048945b73a22155aab02de9388c3</td>
 	</tr>
 </table>
 
