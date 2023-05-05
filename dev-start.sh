@@ -1,5 +1,27 @@
 #!/bin/bash
 
+#	dev-start.sh
+#	Script to automate the link between the
+#   huronOS-build-tools/docs directory and
+#   huronOS-website/docs directory by hiding the
+#   docs/ dir and configuring docusaurus to
+#   not resolve the symlink
+#
+#	Copyright (C) 2022, huronOS Project:
+#		<http://huronos.org>
+#
+#	Licensed under the GNU GPL Version 2
+#		<http://www.gnu.org/licenses/gpl-2.0.html>
+#
+#	Authors:
+#		Enya Quetzalli <equetzal@huronos.org>
+#
+#   Tested on:
+#       - huronOS Queue 0.3
+#       - Debian Bullsseye 11
+#       - Debian Bullseye 11 over Windows WSL
+#       - macOS Ventura 13
+
 SCRIPT_LOCATION="$(dirname $(readlink -f "$0"))"
 HBT_REPO="$SCRIPT_LOCATION/../huronOS-build-tools"
 
