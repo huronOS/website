@@ -1,14 +1,5 @@
 # Timezones
-The directives file is able to configure a timezone for the huronOS instance via the `TimeZone` directive, this timezones are compliant with the [IANA  timezones standard](https://www.iana.org/time-zones), we do highly recommend you checking [which timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is your city.
-
-*huronOS Queue 0.3 is compliant with the 2023c release of the timezones database.*
-
-## Example
-```ini
-TimeZone=America/Mexico_City
-```
-
-## Supported values for this directive:
+The directives file is able to configure a timezone for the huronOS instance via the `TimeZone` configuration, these are the possible values for this field:
 - `Africa/Abidjan`
 - `Africa/Accra`
 - `Africa/Algiers`
@@ -62,7 +53,6 @@ TimeZone=America/Mexico_City
 - `America/Cayenne`
 - `America/Chicago`
 - `America/Chihuahua`
-- `America/Ciudad_Juarez`
 - `America/Costa_Rica`
 - `America/Creston`
 - `America/Cuiaba`

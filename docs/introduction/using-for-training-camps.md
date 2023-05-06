@@ -1,5 +1,5 @@
 ---
 sidebar_position: 3
 ---
-# Boot Options
+# Using for training camps
 TODO
