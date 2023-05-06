@@ -15,7 +15,7 @@ const config = {
 	url: "https://huronos.org",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/huronOS-website/",
+	baseUrl: "/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
@@ -63,7 +63,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			// Replace with your project's social card
-			image: "img/docusaurus-social-card.jpg",
+			//image: "img/docusaurus-social-card.jpg",
 			announcementBar: {
 				id: 'alpha-v0.3',
 				content:

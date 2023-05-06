@@ -31,8 +31,8 @@ export default function Home(): JSX.Element {
 	const { siteConfig } = useDocusaurusContext();
 	return (
 		<Layout
-			title={`Hello from ${siteConfig.title}`}
-			description="Description will go into a meta tag in <head />"
+			title={`${siteConfig.title} | A GNU / Linux distribution for competitive programming`}
+			description="huronOS is GNU / Linux distribution that is specialized in competitive programming and all the activities around it, like official contests, training camps, practice contests or tests."
 		>
 			<HomepageHeader />
 			<main>
