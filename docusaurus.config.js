@@ -136,6 +136,10 @@ const config = {
 								label: "Discord",
 								href: "https://discord.gg/NVZ6vJmm5q",
 							},
+							{
+								label: "Telegram",
+								href: "https://t.me/+5IjLAE7MpW05OGNh",
+							},
 						],
 					},
 					{
