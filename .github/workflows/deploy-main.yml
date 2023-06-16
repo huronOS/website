@@ -1,0 +1,42 @@
+name: Deploy from stable to the site
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📡 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 🍔 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: 🦕 Install Docusaurus
+        run: yarn install --frozen-lockfile
+
+      - name: 🧹 Delete TODO Files
+        run: |
+          chmod +x ./.github/scripts/quit-todo.sh
+          ./.github/scripts/quit-todo.sh
+
+      # - name: Update version
+      #   run: yarn docusaurus docs:version ${{ github.event.head_commit.message }}
+
+      #- uses: stefanzweifel/git-auto-commit-action@v4
+
+      - name: Build website
+        run: yarn build
+
+      # Deploy to the site through ssh or alike
+      # https://github.com/easingthemes/ssh-deploy
