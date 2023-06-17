@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/huronOS_instance_sync.svg').default,
     description: (
       <>
-        huronOS is build with synchronization in mind,
+        huronOS is built with synchronization in mind,
         you can use network-shared behavior directives 
         to set the same rules, software and policies 
         among huronOS instances.
