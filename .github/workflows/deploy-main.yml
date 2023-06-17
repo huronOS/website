@@ -35,8 +35,19 @@ jobs:
 
       #- uses: stefanzweifel/git-auto-commit-action@v4
 
-      - name: Build website
+      - name: 🛠️ Build website
         run: yarn build
+
+      - name: 🪁 Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+            server: ${{ secrets.PROD_HOST }}
+            username: ${{ secrets.PROD_SSH_USERNAME }}
+            password: ${{ secrets.PROD_SSH_PASSWORD }}
+            local_path: './build/*'
+            remote_path: ${{ secrets.PROD_DEPLOY_PATH }}
+            delete_remote_files: true
+            sftp_only: false
 
       # Deploy to the site through ssh or alike
       # https://github.com/easingthemes/ssh-deploy
