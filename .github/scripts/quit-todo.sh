@@ -18,5 +18,24 @@
 # Change to the website/docs directory
 cd docs || exit
 
-# Find and delete markdown files containing "TODO"
-find . -type f -name "*.md" -exec grep -q "TODO" {} \; -exec rm {} \;
+# Check if "TODO" is present outside code blocks
+has_todo() {
+    local file="$1"
+
+    # Remove code blocks and inline code using sed
+    local content
+    content=$(sed -e '/```/,/```/d' -e 's/`[^`]*`//g' "$file")
+
+    # Check for "TODO" outside code blocks and inline code
+    if [[ $content == *TODO* ]]; then
+        return 0 # Has TODO
+    else
+        return 1 # Does not have TODO
+    fi
+}
+
+while IFS= read -r file; do
+    if has_todo "$file"; then
+        echo "File $file have TODO"
+    fi
+done < <(find . -type f -name "*.md")
