@@ -37,5 +37,6 @@ has_todo() {
 while IFS= read -r file; do
     if has_todo "$file"; then
         echo "File $file have TODO"
+        rm -rf "$file"
     fi
 done < <(find . -type f -name "*.md")
