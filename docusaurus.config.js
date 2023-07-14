@@ -64,14 +64,14 @@ const config = {
 		({
 			// Replace with your project's social card
 			//image: "img/docusaurus-social-card.jpg",
-			announcementBar: {
+			/*announcementBar: {
 				id: 'alpha-v0.3',
 				content:
 				  '<b>Hey, alpha-v0.3 has just been released! <a target="_blank" href="https://github.com/equetzal/huronOS-build-tools/releases">check the release notes.</a></b>',
 				backgroundColor: '#94A2E8',
 				textColor: '#000',
 				isCloseable: true,
-			  },
+			  },*/
 			navbar: {
 				title: "huronOS",
 				logo: {
