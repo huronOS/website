@@ -35,7 +35,7 @@ sidebar_position: 1
    ```
 - **On Arch Linux:**  
    ```bash
-   pacman -S install squashfs-tools parted psmisc e2fsprogs dosfstools perl
+   pacman -S squashfs-tools parted psmisc e2fsprogs dosfstools perl
    ```
 
 ### Process
