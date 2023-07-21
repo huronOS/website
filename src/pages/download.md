@@ -1,7 +1,7 @@
 ---
 title: Download huronOS
 ---
-# Download huronOS
+# Download huronOS Wujujuju
 
 > **Warning:** huronOS cannot be installed by burning the ISO image on a device as other regular distros would do. Please follow our [**installation guide**](/docs/usage/how-to-install) to install huronOS correctly.
 
