@@ -15,9 +15,6 @@
 #	Authors:
 #		Enya Quetzalli <equetzal@huronos.org>
 
-# Change to the website/docs directory
-cd docs || exit
-
 # Check if "TODO" is present outside code blocks
 has_todo() {
     local file="$1"
@@ -34,9 +31,21 @@ has_todo() {
     fi
 }
 
-while IFS= read -r file; do
-    if has_todo "$file"; then
-        echo "File $file have TODO"
-        rm -rf "$file"
-    fi
-done < <(find . -type f -name "*.md")
+delete_todo(){
+    while IFS= read -r file; do
+        if has_todo "$file"; then
+            echo "File $file have TODO"
+            rm -rf "$file"
+        fi
+    done < <(find . -type f -name "*.md")
+}
+
+# Change to the website/docs directory
+pushd docs || exit 0
+delete_todo
+popd || exit 0
+
+pushd versioned_docs || exit 0
+delete_todo
+popd || exit 0
+
