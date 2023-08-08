@@ -40,6 +40,14 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
+
+					includeCurrentVersion: true,
+					lastVersion: '0.3.1',
+					versions: {
+						"0.3.1": {
+							label: "v0.3.1"
+						}
+					},
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					// editUrl:
@@ -101,6 +109,10 @@ const config = {
 								to: "/donate"
 							}
 						]
+					},
+					{
+						type: "docsVersionDropdown",
+						position: "right"
 					},
 					{
 						href: "https://github.com/equetzal/huronOS-build-tools",
