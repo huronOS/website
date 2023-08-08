@@ -22,6 +22,7 @@ const config = {
 	organizationName: "huronOS", // Usually your GitHub org/user name.
 	projectName: "huronOS-website", // Usually your repo name.
 
+	noIndex: true,
 	onBrokenLinks: "warn",
 	onBrokenMarkdownLinks: "warn",
 

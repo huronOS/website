@@ -30,10 +30,10 @@ jobs:
           chmod +x ./.github/scripts/quit-todo.sh
           ./.github/scripts/quit-todo.sh
 
-      - name: 🧹 Remove Current version
+      - name: 🍳 Prepare website configs for production
         run: |
-          chmod +x ./.github/scripts/remove-current-docs.sh
-          ./.github/scripts/remove-current-docs.sh
+          chmod +x ./.github/scripts/set-prod-config.sh
+          ./.github/scripts/set-prod-config.sh
 
       # - name: Update version
       #   run: yarn docusaurus docs:version ${{ github.event.head_commit.message }}
