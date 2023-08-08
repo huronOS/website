@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy to huronos.org
     runs-on: ubuntu-latest
     steps:
       - name: 📡 Get latest code
@@ -29,6 +29,11 @@ jobs:
         run: |
           chmod +x ./.github/scripts/quit-todo.sh
           ./.github/scripts/quit-todo.sh
+
+      - name: 🧹 Remove Current version
+        run: |
+          chmod +x ./.github/scripts/remove-current-docs.sh
+          ./.github/scripts/remove-current-docs.sh
 
       # - name: Update version
       #   run: yarn docusaurus docs:version ${{ github.event.head_commit.message }}
