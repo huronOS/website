@@ -43,8 +43,11 @@ const config = {
 					sidebarPath: require.resolve("./sidebars.js"),
 
 					includeCurrentVersion: true,
-					lastVersion: '0.3.1',
+					lastVersion: '0.4',
 					versions: {
+						"0.4": {
+							label: "v0.4"
+						},
 						"0.3.1": {
 							label: "v0.3.1"
 						}
