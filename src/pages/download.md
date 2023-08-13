@@ -25,12 +25,17 @@ title: Download huronOS
 	</tr>
 </table>
 
-For other versions, please check our [mirrors](#mirrors) list
-
 ## Mirrors
-| Mirror  | URL                                  |
-| ------- | ------------------------------------ |
-| huronOS | https://mirrors.huronos.org/huronOS/ |
+Want better download speeds? Check out the huronOS mirrors to choose a one closer to you!
+
+| Mirror  | Location     | URL                                  |
+| ------- | ------------ | ------------------------------------ |
+| huronOS | CDMX, Mexico | https://mirrors.huronos.org/huronOS/ |
+
+## Archive 
+If you want to check all the historical versions of huronOS not available in our mirrors, check out our archive.
+https://archive.huronos.org/builds/
+Here you'll find experimental builds, released images and build-number based images. 
 
 ### Become a mirror!
 Please, notify us when setting up a mirror of huronOS!
