@@ -43,8 +43,11 @@ const config = {
 					sidebarPath: require.resolve("./sidebars.js"),
 
 					includeCurrentVersion: true,
-					lastVersion: '0.3.1',
+					lastVersion: '0.4',
 					versions: {
+						"0.4": {
+							label: "v0.4"
+						},
 						"0.3.1": {
 							label: "v0.3.1"
 						}
@@ -74,13 +77,14 @@ const config = {
 			// Replace with your project's social card
 			//image: "img/docusaurus-social-card.jpg",
 			/*announcementBar: {
-				id: 'alpha-v0.3',
+				id: 'alpha-v0.4',
 				content:
-				  '<b>Hey, alpha-v0.3 has just been released! <a target="_blank" href="https://github.com/equetzal/huronOS-build-tools/releases">check the release notes.</a></b>',
+				  '<b>Hey, alpha-v0.4 has just been released! <a target="_blank" href="https://github.com/equetzal/huronOS-build-tools/releases">check the release notes.</a></b>',
 				backgroundColor: '#94A2E8',
 				textColor: '#000',
 				isCloseable: true,
-			  },*/
+			  },
+			  */
 			navbar: {
 				title: "huronOS",
 				logo: {
